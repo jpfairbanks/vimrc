@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 imap jk <esc>
 nmap ; :
 nmap <leader>d :e .<cr>
@@ -27,3 +28,5 @@ set complete+=k
 set complete+=t
 
 nnoremap <F12>c :exe ':silent !chromium-browser %'<CR>
+set tw=120
+autocmd BufWrite *.go :call DeleteTrailingWS()
