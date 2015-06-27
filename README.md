@@ -1,6 +1,8 @@
 # The Ultimate vimrc
 
-Over the last 8 years I have used and tweaked Vim. This is my Ultimate vimrc.
+This configuration started as a fork of Amix's vimrc.
+I have removed several features because of different needs.
+If you fork this please let me know.
 
 There are two versions:
 
@@ -31,6 +33,8 @@ This is useful to install on remote servers where you don't need many plugins an
 ## How to install on Windows?
 
 Use [msysgit](http://msysgit.github.com/) to checkout the repository and run the installation instructions above. No special instructions needed ;-)
+This worked when it started because Amix cared about windows.
+As it drifts away from upstream, there is no guarantee
 
 
 ## How to update to latest version?
@@ -51,12 +55,6 @@ Opening recently opened files [mru.vim](https://github.com/vim-scripts/mru.vim):
 
 [NERD Tree](https://github.com/scrooloose/nerdtree) plugin in a terminal window:
 ![Screenshot 3](http://files1.wedoist.com/b1509d7ed9e9f357e8d04797f9fad67b/as/screenshot3.png)
-
-This vimrc even works on Windows!
-![Screenshot 4](http://files1.wedoist.com/4e85163d97b81422240c822c82022f2f/as/screenshot_4.png)
-
-Distraction free mode using [goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/amix/vim-zenroom2):
-![Screenshot 5](https://d2dq6e731uoz0t.cloudfront.net/a5182977c3d6c2a6cd3f9e97398ca8ca/as/zen_mode.jpg)
 
 
 ## Included Plugins
@@ -79,28 +77,20 @@ I recommend reading the docs of these plugins to understand them better. Each of
 * [vim-expand-region](https://github.com/terryma/vim-expand-region): Allows you to visually select increasingly larger regions of text using the same key combination.
 * [vim-airline](https://github.com/bling/vim-airline): Lean & mean status/tabline for vim that's light as air (replacing powerline)
 * [vim-fugitive](https://github.com/tpope/vim-fugitive): A Git wrapper so awesome, it should be illegal
-* [goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/amix/vim-zenroom2): 
-Remove all clutter and focus only on the essential. Similar to iA Writer or Write Room [Read more here](http://amix.dk/blog/post/19744)
 * [vim-commentary](https://github.com/tpope/vim-commentary): Comment stuff out.  Use `gcc` to comment out a line (takes a count), `gc` to comment out the target of a motion. `gcu` uncomments a set of adjacent commented lines.
 * [syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim
 
 
 ## Included color schemes
 
-* [peaksea](https://github.com/vim-scripts/peaksea): My favorite!
 * [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
 * [vim-irblack](https://github.com/wgibbs/vim-irblack)
 * [mayansmoke](https://github.com/vim-scripts/mayansmoke)
-* [vim-pyte](https://github.com/therubymug/vim-pyte)
 
 
 ## Included modes
 
-* [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
-* [vim-less](https://github.com/groenewege/vim-less)
-* [vim-bundle-mako](https://github.com/sophacles/vim-bundle-mako)
 * [vim-markdown](https://github.com/tpope/vim-markdown)
-* [nginx.vim](https://github.com/vim-scripts/nginx.vim): Highlights configuration files for nginx
 * [vim-golang](https://github.com/jnwhiteh/vim-golang)
 
 
@@ -145,10 +135,6 @@ Managing the [NERD Tree](https://github.com/scrooloose/nerdtree) plugin:
     map <leader>nn :NERDTreeToggle<cr>
     map <leader>nb :NERDTreeFromBookmark 
     map <leader>nf :NERDTreeFind<cr>
-
-[goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/amix/vim-zenroom2) lets you only focus on one thing at a time. It removes all the distractions and centers the content. It has a special look when editing Markdown, reStructuredText and textfiles. It only has one mapping.
-
-    map <leader>z :Goyo<cr>
 
 ### Normal mode mappings
 
@@ -324,5 +310,3 @@ Vimscript mappings:
 * [Vim 7.3: Persistent undo and encryption!](http://amix.dk/blog/post/19548#Vim-7-3-Persistent-undo-and-encryption)
 * [Vim tips: Visual Search](http://amix.dk/blog/post/19334#Vim-tips-Visual-Search)
 * [Folding in Vim](http://amix.dk/blog/post/19132#Folding-in-Vim)
-* [
-Zen room for Vim: Focusing only on the essential](http://amix.dk/blog/post/19744#zenroom-for-Vim-Focsuing-only-on-the-essential)
