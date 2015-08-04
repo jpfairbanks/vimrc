@@ -1,10 +1,12 @@
-<<<<<<< HEAD
 imap jk <esc>
 nmap ; :
 nmap <leader>d :e .<cr>
 
 nmap <leader>% :source %<cr>
+"reindent file
 map <F7> mzgg=G`z
+"reflow paragraph
+map <F8> gqap
 map <leader>h :split
 map <leader>v :vsplit
 
